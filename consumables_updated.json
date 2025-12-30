@@ -1,0 +1,480 @@
+{
+  "consumables": {
+    "'보호막' 스크롤": {
+      "category": "소모",
+      "description": "보호막 마법이 저장된 스크롤. 사용 즉시 보호막을 (120 + 최대 체력의 25%)만큼 생성한다.",
+      "rarity": "UNCOMMON",
+      "price": 120,
+      "use": {
+        "in_battle": true,
+        "out_of_battle": true
+      },
+      "effects": [
+        {
+          "type": "add_shield",
+          "flat": 120,
+          "pct_max_hp": 0.25
+        }
+      ]
+    },
+    "'스톤 골렘' 스크롤": {
+      "category": "소모",
+      "description": "지계 마법 '스톤 골렘'이 저장된 스크롤.",
+      "rarity": "UNCOMMON",
+      "price": 120,
+      "use": {
+        "in_battle": true,
+        "out_of_battle": true
+      },
+      "effects": [
+        {
+          "type": "cast_skill",
+          "skill": "스톤 골렘'",
+          "mp_cost_override": 0,
+          "source": "scroll"
+        }
+      ]
+    },
+    "'아이스 스피어' 스크롤": {
+      "category": "소모",
+      "description": "수계 마법 '아이스 스피어'가 저장된 스크롤.",
+      "rarity": "UNCOMMON",
+      "price": 120,
+      "use": {
+        "in_battle": true,
+        "out_of_battle": true
+      },
+      "effects": [
+        {
+          "type": "cast_skill",
+          "skill": "아이스 스피어'",
+          "mp_cost_override": 0,
+          "source": "scroll"
+        }
+      ]
+    },
+    "'윈드 스트라이크' 스크롤": {
+      "category": "소모",
+      "description": "공계 마법 '윈드 스트라이크'가 저장된 스크롤.",
+      "rarity": "UNCOMMON",
+      "price": 120,
+      "use": {
+        "in_battle": true,
+        "out_of_battle": true
+      },
+      "effects": [
+        {
+          "type": "cast_skill",
+          "skill": "윈드 스트라이크'",
+          "mp_cost_override": 0,
+          "source": "scroll"
+        }
+      ]
+    },
+    "'파이어 볼' 스크롤": {
+      "category": "소모",
+      "description": "화계 마법 '파이어 볼'이 저장된 스크롤.",
+      "rarity": "UNCOMMON",
+      "price": 120,
+      "use": {
+        "in_battle": true,
+        "out_of_battle": true
+      },
+      "effects": [
+        {
+          "type": "cast_skill",
+          "skill": "파이어 볼'",
+          "mp_cost_override": 0,
+          "source": "scroll"
+        }
+      ]
+    },
+    "'파이어 애로우' 스크롤": {
+      "category": "소모",
+      "description": "화계 마법 '파이어 애로우'가 저장된 스크롤.",
+      "rarity": "UNCOMMON",
+      "price": 120,
+      "use": {
+        "in_battle": true,
+        "out_of_battle": true
+      },
+      "effects": [
+        {
+          "type": "cast_skill",
+          "skill": "파이어 애로우'",
+          "mp_cost_override": 0,
+          "source": "scroll"
+        }
+      ]
+    },
+    "'하이드로펌프' 스크롤": {
+      "category": "소모",
+      "description": "수계 마법 '하이드로펌프'가 저장된 스크롤.",
+      "rarity": "UNCOMMON",
+      "price": 120,
+      "use": {
+        "in_battle": true,
+        "out_of_battle": true
+      },
+      "effects": [
+        {
+          "type": "cast_skill",
+          "skill": "하이드로펌프'",
+          "mp_cost_override": 0,
+          "source": "scroll"
+        }
+      ]
+    },
+    "개발자용 소모품": {
+      "category": "기타",
+      "description": "개발자는 체력이 중요합니다.",
+      "rarity": "DEBUG",
+      "use": {
+        "in_battle": true,
+        "out_of_battle": true
+      },
+      "effects": [
+        {
+          "type": "debug",
+          "note": "placeholder"
+        }
+      ],
+      "not_sold": true
+    },
+    "근력 훈련 교본": {
+      "category": "서적",
+      "description": "근력 향상을 위한 훈련법이 적혀있는 책. (영구) 공격력 +2, 최대 체력 +15",
+      "rarity": "RARE",
+      "price": 300,
+      "use": {
+        "in_battle": false,
+        "out_of_battle": true
+      },
+      "effects": [
+        {
+          "type": "perm_stats",
+          "stats": {
+            "attack": 2,
+            "max_hp": 15
+          }
+        }
+      ],
+      "unique": true
+    },
+    "대형 마나 포션": {
+      "category": "소모",
+      "description": "맑고 투명한 파란색의 액체. 마시면 마나가 (80 + 최대 마나의 40%)만큼 회복된다.",
+      "rarity": "RARE",
+      "price": 140,
+      "use": {
+        "in_battle": true,
+        "out_of_battle": true
+      },
+      "effects": [
+        {
+          "type": "heal",
+          "stat": "mp",
+          "flat": 80,
+          "pct_max": 0.4
+        }
+      ]
+    },
+    "대형 체력 포션": {
+      "category": "소모",
+      "description": "맑고 투명한 붉은색의 액체. 마시면 체력이 (120 + 최대 체력의 40%)만큼 회복된다.",
+      "rarity": "RARE",
+      "price": 140,
+      "use": {
+        "in_battle": true,
+        "out_of_battle": true
+      },
+      "effects": [
+        {
+          "type": "heal",
+          "stat": "hp",
+          "flat": 120,
+          "pct_max": 0.4
+        }
+      ]
+    },
+    "대환단": {
+      "category": "영약",
+      "description": "수 년에 한 개씩만 제작된다는 매우 귀한 영약. (영구) 체력/마나, 전투 스탯이 크게 상승한다.",
+      "rarity": "LEGENDARY",
+      "price": 2000,
+      "use": {
+        "in_battle": false,
+        "out_of_battle": true
+      },
+      "effects": [
+        {
+          "type": "perm_stats",
+          "stats": {
+            "max_hp": 40,
+            "max_mp": 25,
+            "attack": 2,
+            "spell_power": 2,
+            "defense": 2,
+            "magic_resist": 2,
+            "speed": 2
+          }
+        }
+      ],
+      "unique": true
+    },
+    "마나 포션": {
+      "category": "소모",
+      "description": "맑고 투명한 파란색의 액체. 마시면 마나가 (40 + 최대 마나의 30%)만큼 회복된다.",
+      "rarity": "UNCOMMON",
+      "price": 60,
+      "use": {
+        "in_battle": true,
+        "out_of_battle": true
+      },
+      "effects": [
+        {
+          "type": "heal",
+          "stat": "mp",
+          "flat": 40,
+          "pct_max": 0.3
+        }
+      ]
+    },
+    "만병통치제": {
+      "category": "소모",
+      "description": "누런 빛이 도는 맑은 액체. 마시면 모든 상태이상을 제거한다.",
+      "rarity": "RARE",
+      "price": 180,
+      "use": {
+        "in_battle": true,
+        "out_of_battle": true
+      },
+      "effects": [
+        {
+          "type": "remove_status",
+          "statuses": [
+            "화상",
+            "독",
+            "출혈",
+            "빙결",
+            "마비",
+            "패닉",
+            "실명"
+          ]
+        }
+      ]
+    },
+    "소형 마나 포션": {
+      "category": "소모",
+      "description": "맑고 투명한 파란색의 액체. 마시면 마나가 (20 + 최대 마나의 20%)만큼 회복된다.",
+      "rarity": "COMMON",
+      "price": 25,
+      "use": {
+        "in_battle": true,
+        "out_of_battle": true
+      },
+      "effects": [
+        {
+          "type": "heal",
+          "stat": "mp",
+          "flat": 20,
+          "pct_max": 0.2
+        }
+      ]
+    },
+    "소형 체력 포션": {
+      "category": "소모",
+      "description": "맑고 투명한 붉은색의 액체. 마시면 체력이 (30 + 최대 체력의 20%)만큼 회복된다.",
+      "rarity": "COMMON",
+      "price": 25,
+      "use": {
+        "in_battle": true,
+        "out_of_battle": true
+      },
+      "effects": [
+        {
+          "type": "heal",
+          "stat": "hp",
+          "flat": 30,
+          "pct_max": 0.2
+        }
+      ]
+    },
+    "소환단": {
+      "category": "영약",
+      "description": "동방의 무인들이 제작한 연단. (영구) 체력/마나, 전투 스탯이 소폭 상승한다.",
+      "rarity": "EPIC",
+      "price": 800,
+      "use": {
+        "in_battle": false,
+        "out_of_battle": true
+      },
+      "effects": [
+        {
+          "type": "perm_stats",
+          "stats": {
+            "max_hp": 15,
+            "max_mp": 10,
+            "attack": 1,
+            "spell_power": 1,
+            "defense": 1,
+            "magic_resist": 1,
+            "speed": 1
+          }
+        }
+      ],
+      "unique": true
+    },
+    "엘릭서": {
+      "category": "소모",
+      "description": "맑고 투명한 보라색의 액체. 마시면 체력과 마나가 모두 최대치로 회복된다.",
+      "rarity": "EPIC",
+      "price": 500,
+      "use": {
+        "in_battle": true,
+        "out_of_battle": true
+      },
+      "effects": [
+        {
+          "type": "restore_full",
+          "stats": [
+            "hp",
+            "mp"
+          ]
+        }
+      ]
+    },
+    "연막탄": {
+      "category": "소모",
+      "description": "터지면서 다량의 연기를 내뿜는 도구. 대부분의 상황에서 도망칠 수 있다.(boss급 몬스터에게는 통하지 않는다.)",
+      "rarity": "UNCOMMON",
+      "price": 80,
+      "use": {
+        "in_battle": true,
+        "out_of_battle": true
+      },
+      "effects": [
+        {
+          "type": "escape",
+          "mode": "guaranteed_if_not_boss"
+        }
+      ]
+    },
+    "이상한사탕": {
+      "category": "영약",
+      "description": "고대 던전이나 이계에서 가끔 발견되는 극히 희귀한 사탕. (영구) 레벨 +1",
+      "rarity": "LEGENDARY",
+      "use": {
+        "in_battle": false,
+        "out_of_battle": true
+      },
+      "effects": [
+        {
+          "type": "level_up",
+          "amount": 1
+        }
+      ],
+      "unique": true,
+      "not_sold": true
+    },
+    "지혈제": {
+      "category": "소모",
+      "description": "희멀건하고 슬라임처럼 끈적이는 약. 마시면 출혈 상태이상을 제거한다.",
+      "rarity": "COMMON",
+      "price": 40,
+      "use": {
+        "in_battle": true,
+        "out_of_battle": true
+      },
+      "effects": [
+        {
+          "type": "remove_status",
+          "statuses": [
+            "출혈"
+          ]
+        }
+      ]
+    },
+    "체력 포션": {
+      "category": "소모",
+      "description": "맑고 투명한 붉은색의 액체. 마시면 체력이 (60 + 최대 체력의 30%)만큼 회복된다.",
+      "rarity": "UNCOMMON",
+      "price": 60,
+      "use": {
+        "in_battle": true,
+        "out_of_battle": true
+      },
+      "effects": [
+        {
+          "type": "heal",
+          "stat": "hp",
+          "flat": 60,
+          "pct_max": 0.3
+        }
+      ]
+    },
+    "쿠룰렌타 구이": {
+      "category": "소모",
+      "description": "적도 부근의 테티스 해에서 잡히는 심해어 구이. (즉시) 체력 회복 + (60 + 최대 체력의 25%), (영구) 최대 체력 +10",
+      "rarity": "UNCOMMON",
+      "price": 200,
+      "use": {
+        "in_battle": false,
+        "out_of_battle": true
+      },
+      "effects": [
+        {
+          "type": "heal",
+          "stat": "hp",
+          "flat": 60,
+          "pct_max": 0.25
+        },
+        {
+          "type": "perm_stats",
+          "stats": {
+            "max_hp": 10
+          }
+        }
+      ],
+      "unique": true
+    },
+    "트리얼 고대사": {
+      "category": "서적",
+      "description": "트리얼 왕국의 역사서. 고대의 역사를 다루고 있다. (영구) 주문력 +2, 최대 마나 +10",
+      "rarity": "RARE",
+      "price": 300,
+      "use": {
+        "in_battle": false,
+        "out_of_battle": true
+      },
+      "effects": [
+        {
+          "type": "perm_stats",
+          "stats": {
+            "spell_power": 2,
+            "max_mp": 10
+          }
+        }
+      ],
+      "unique": true
+    },
+    "해독제": {
+      "category": "소모",
+      "description": "자주빛이 감도는 액체. 마시면 중독 상태이상을 제거한다.",
+      "rarity": "COMMON",
+      "price": 40,
+      "use": {
+        "in_battle": true,
+        "out_of_battle": true
+      },
+      "effects": [
+        {
+          "type": "remove_status",
+          "statuses": [
+            "독"
+          ]
+        }
+      ]
+    }
+  }
+}
