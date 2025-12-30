@@ -1,0 +1,103 @@
+{
+  "enemies": [
+    {
+      "id": "slime",
+      "name": "슬라임",
+      "tier": "minion",
+      "element": "water",
+      "description": "젤라틴 형태의 몬스터로 단순한 공격 패턴을 가진다.",
+      "xp_reward": 8,
+      "base_level": 1,
+      "base_stats": {
+        "max_hp": 22,
+        "max_mp": 0,
+        "attack": 3,
+        "magic": 0,
+        "defense": 1,
+        "magic_resist": 0,
+        "speed": 2,
+        "max_shield": 0
+      },
+      "growth_per_level": {
+        "max_hp": 2.2,
+        "max_mp": 0.0,
+        "attack": 0.2,
+        "magic": 0.0,
+        "defense": 0.1,
+        "magic_resist": 0.0,
+        "speed": 0.0,
+        "max_shield": 0.0
+      },
+      "skills": [
+        {"name": "기본 공격", "weight": 1}
+      ]
+    },
+    {
+      "id": "goblin",
+      "name": "고블린",
+      "tier": "minion",
+      "element": "earth",
+      "description": "투박한 무기를 휘두르는 고블린.",
+      "xp_reward": 12,
+      "base_level": 2,
+      "base_stats": {
+        "max_hp": 26,
+        "max_mp": 6,
+        "attack": 4,
+        "magic": 1,
+        "defense": 1,
+        "magic_resist": 0,
+        "speed": 4,
+        "max_shield": 0
+      },
+      "growth_per_level": {
+        "max_hp": 2.4,
+        "max_mp": 0.5,
+        "attack": 0.3,
+        "magic": 0.1,
+        "defense": 0.1,
+        "magic_resist": 0.0,
+        "speed": 0.1,
+        "max_shield": 0.0
+      },
+      "skills": [
+        {"name": "기본 공격", "weight": 2},
+        {"name": "돌격 베기", "weight": 1}
+      ]
+    },
+    {
+      "id": "goblin_champion",
+      "name": "고블린 챔피언",
+      "tier": "boss",
+      "element": "earth",
+      "description": "높은 체력과 공격력을 지닌 보스.",
+      "xp_reward": 40,
+      "base_level": 6,
+      "base_stats": {
+        "max_hp": 90,
+        "max_mp": 12,
+        "attack": 8,
+        "magic": 2,
+        "defense": 3,
+        "magic_resist": 1,
+        "speed": 4,
+        "max_shield": 10
+      },
+      "growth_per_level": {
+        "max_hp": 4.0,
+        "max_mp": 1.0,
+        "attack": 0.5,
+        "magic": 0.2,
+        "defense": 0.2,
+        "magic_resist": 0.1,
+        "speed": 0.1,
+        "max_shield": 0.5
+      },
+      "skills": [
+        {"name": "기본 공격", "weight": 2},
+        {"name": "돌격 베기", "weight": 2},
+        {"name": "연막", "weight": 1}
+      ]
+    }
+  ]
+}

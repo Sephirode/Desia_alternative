@@ -1,0 +1,50 @@
+{
+  "special_tags": {
+    "always_hit": {
+      "hook": "pre_accuracy",
+      "type": "force_hit",
+      "description": "이 스킬은 무조건 적중한다."
+    },
+    "always_miss": {
+      "hook": "pre_accuracy",
+      "type": "force_miss",
+      "description": "이 스킬은 무조건 빗나간다."
+    },
+    "life_steal_small": {
+      "hook": "per_target",
+      "type": "life_steal",
+      "ratio": 0.2,
+      "description": "피해량의 20%만큼 체력을 회복한다."
+    },
+    "reinforce_shield": {
+      "hook": "after_resolve",
+      "type": "shield_cap_boost",
+      "amount": 5,
+      "description": "전투 동안 최대 보호막을 상승시킨다."
+    }
+  },
+  "status_definitions": {
+    "blind": {
+      "accuracy_multiplier": 0.7,
+      "description": "명중률이 감소한다."
+    },
+    "panic": {
+      "skip_chance": 0.4,
+      "description": "일정 확률로 행동하지 못한다."
+    },
+    "poison": {
+      "damage_per_turn": {"stat": "target_max_hp", "coef": 0.05},
+      "damage_type": "true",
+      "description": "매 턴 체력을 잃는다."
+    },
+    "burn": {
+      "damage_per_turn": {"stat": "target_max_hp", "coef": 0.04},
+      "damage_type": "magic",
+      "description": "매 턴 화상 피해를 입는다."
+    },
+    "weakness": {
+      "damage_taken_multiplier": 1.1,
+      "description": "받는 피해가 증가한다."
+    }
+  }
+}
