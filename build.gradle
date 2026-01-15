@@ -18,3 +18,26 @@ dependencies {
 application {
     mainClass = 'com.desia.game.Main'
 }
+
+tasks.register('packageExe') {
+    dependsOn jar
+    doLast {
+        def os = org.gradle.internal.os.OperatingSystem.current()
+        if (!os.isWindows()) {
+            throw new GradleException("packageExe는 Windows에서만 지원합니다.")
+        }
+        def outputDir = layout.buildDirectory.dir('jpackage').get().asFile
+        def inputDir = layout.buildDirectory.dir('libs').get().asFile
+        outputDir.mkdirs()
+        exec {
+            commandLine 'jpackage',
+                    '--type', 'exe',
+                    '--dest', outputDir.absolutePath,
+                    '--input', inputDir.absolutePath,
+                    '--name', 'Desia',
+                    '--main-jar', jar.archiveFileName.get(),
+                    '--main-class', application.mainClass.get(),
+                    '--app-version', version.toString()
+        }
+    }
+}

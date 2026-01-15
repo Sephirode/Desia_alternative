@@ -54,6 +54,16 @@ Desia_alternative/
 
 > 실행 시 `Validation OK` 로그가 출력되면 데이터 로딩/검증이 정상입니다.
 
+### 4) Windows에서 EXE 패키징
+
+Windows 환경에서 JDK 17이 설치되어 있고 `jpackage`가 사용 가능해야 합니다.
+
+```bash
+./gradlew packageExe
+```
+
+성공 시 `build/jpackage/` 아래에 EXE가 생성됩니다.
+
 ## 데이터 샘플
 
 `data/` 폴더에 PLAN1-2 스펙을 따른 최소 샘플을 추가했습니다.
