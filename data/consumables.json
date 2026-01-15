@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "consumables": {
+    "hp_potion_s": {
+      "name": "소형 체력 포션",
+      "description": "체력을 회복한다.",
+      "rarity": "common",
+      "price": 30,
+      "sell_ratio": 0.7,
+      "usable_in_battle": true,
+      "effects": [
+        { "type": "heal_hp", "flat": 30, "percent_max_hp": 0.2 }
+      ],
+      "special_tags": []
+    },
+    "mp_potion_s": {
+      "name": "소형 마나 포션",
+      "description": "마나를 회복한다.",
+      "rarity": "common",
+      "price": 25,
+      "sell_ratio": 0.7,
+      "usable_in_battle": true,
+      "effects": [
+        { "type": "heal_mp", "flat": 10, "percent_max_mp": 0.2 }
+      ],
+      "special_tags": []
+    }
+  }
+}

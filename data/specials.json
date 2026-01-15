@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "specials": {
+    "TAG_ALWAYS_HIT": {
+      "description": "필중",
+      "hooks": ["pre_accuracy"],
+      "params": {}
+    },
+    "TAG_BUFF_MINOR_ATTACK": {
+      "description": "공격력 소폭 증가",
+      "hooks": ["on_battle_start"],
+      "params": { "stat": "attack", "percent": 0.05 }
+    }
+  }
+}

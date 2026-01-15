@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "equipment": {
+    "iron_sword": {
+      "name": "철검",
+      "description": "무난한 한손검.",
+      "rarity": "common",
+      "slot": "weapon_1h",
+      "price": 100,
+      "sell_ratio": 0.7,
+      "unique": false,
+      "stats": {
+        "flat": { "attack": 3 },
+        "percent": {}
+      },
+      "granted_skills": [],
+      "set_name": null,
+      "special_tags": []
+    },
+    "leather_boots": {
+      "name": "가죽 부츠",
+      "description": "기본적인 방어구.",
+      "rarity": "common",
+      "slot": "boots",
+      "price": 60,
+      "sell_ratio": 0.7,
+      "unique": false,
+      "stats": {
+        "flat": { "max_hp": 2, "speed": 0.2 },
+        "percent": {}
+      },
+      "granted_skills": [],
+      "set_name": null,
+      "special_tags": []
+    }
+  },
+  "sets": {}
+}

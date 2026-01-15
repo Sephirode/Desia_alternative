@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "skills": {
+    "skill_fireball": {
+      "name": "파이어볼",
+      "description": "불꽃 구체를 날린다.",
+      "element": "fire",
+      "category": "attack",
+      "target": "enemy",
+      "mp_cost": 8,
+      "components": [
+        {
+          "kind": "damage",
+          "damage_type": "magic",
+          "terms": [
+            { "stat": "constant", "coef": 12 },
+            { "stat": "self_spell_power", "coef": 0.8 }
+          ]
+        }
+      ],
+      "status_effects": [
+        { "status": "burn", "target": "enemy", "chance": 0.25, "duration_turns": 3 }
+      ],
+      "special_tags": []
+    },
+    "skill_heal": {
+      "name": "힐",
+      "description": "아군을 회복한다.",
+      "element": "neutral",
+      "category": "heal",
+      "target": "ally",
+      "mp_cost": 6,
+      "components": [
+        {
+          "kind": "heal",
+          "terms": [
+            { "stat": "constant", "coef": 8 },
+            { "stat": "self_spell_power", "coef": 0.5 }
+          ]
+        }
+      ],
+      "status_effects": [],
+      "special_tags": []
+    }
+  }
+}
