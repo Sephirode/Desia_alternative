@@ -54,6 +54,14 @@ Desia_alternative/
 
 > 실행 시 `Validation OK` 로그가 출력되면 데이터 로딩/검증이 정상입니다.
 
+### 3-1) 콘솔 전투 데모 실행
+
+콘솔에서 전투 데모를 바로 실행하려면 아래처럼 `play` 인자를 전달하세요.
+
+```bash
+./gradlew run --args="play"
+```
+
 ### 4) Windows에서 EXE 패키징
 
 Windows 환경에서 JDK 17이 설치되어 있고 `jpackage`가 사용 가능해야 합니다.
